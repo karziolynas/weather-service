@@ -1,0 +1,60 @@
+version: '3.9'
+
+services:
+  weatherService_Kaunas:
+    image: weather_service
+    container_name: weatherService_Kaunas
+    ports:
+      - "5151:5151"
+      - "5152:5152"
+    command: ["Kaunas", "weatherService1", "5151"]
+
+  weatherService_Kaunas2:
+    image: weather_service
+    container_name: weatherService_Kaunas2
+    ports:
+      - "5555:5555"
+      - "5556:5556"
+    command: ["Kaunas", "weatherService2", "5555"]
+
+  weatherService_Kaunas3:
+    image: weather_service
+    container_name: weatherService_Kaunas3
+    ports:
+      - "5656:5656"
+      - "5657:5657"
+    command: ["Kaunas", "weatherService3", "5656"]
+
+  weatherService_Vilnius:
+    image: weather_service
+    container_name: weatherService_Vilnius
+    ports:
+      - "5252:5252"
+      - "5253:5253"
+    command: ["Vilnius", "weatherService4", "5252"]
+
+  weatherService_Vilnius2:
+    image: weather_service
+    container_name: weatherService_Vilnius2
+    ports:
+      - "5255:5255"
+      - "5256:5256"
+    command: ["Vilnius", "weatherService5", "5255"]
+
+  weatherService_Utena:
+    image: weather_service
+    container_name: weatherService_Utena
+    ports:
+      - "5454:5454"
+      - "5455:5455"
+    command: ["Utena", "weatherService6", "5454"]
+
+
+  weatherService_Utena2:
+    image: weather_service
+    container_name: weatherService_Utena2
+    ports:
+      - "5456:5456"
+      - "5457:5457"
+    command: ["Utena", "weatherService7", "5456"]
+
